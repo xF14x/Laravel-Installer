@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# This code Programmed By Suliman Al-Mohawis "F14Commander"
+# Github "xF14x"
+# Twitter "@F14Commander"
 echo "Update The Packages.."
 sudo apt update && sudo apt full-upgrade -y
 wait
@@ -16,6 +20,11 @@ wait
 sudo ln -s $Dir/site/public /var/www/html
 cd site/ && chmod 777 storage/ -R && chmod 777 bootstrap/cache -R
 clear
+echo """ 
+# This script Programmed By Suliman Al-Mohawis \"F14Commander\"
+# Github \"xF14x\"
+# Twitter \"@F14Commander\"
+"""
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 echo "now enable the apache2 rewrite mod \"AllowIverride\""
 echo "and thene enter \"sudo a2enmod rewrite\""
@@ -24,5 +33,4 @@ echo "and enter \"sudo mysql_secure_installation\""
 echo "CREATE USER 'YOUR-USERNAME'@'localhost' IDENTIFIED BY 'YOUR-PASSWORD';"
 echo "GRANT ALL PRIVILEGES ON *.* TO 'YOUR-USERNAME'@'localhost' WITH GRANT OPTION;"
 echo "FLUSH PRIVILEGES;"
-
 exec bash
